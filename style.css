@@ -16,6 +16,7 @@ footer img {
 
 body {
     background-color:darkolivegreen;
+    color:rgb(0, 200, 193);
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -25,31 +26,107 @@ body {
 
 h1 {
     font-size: 3rem;
+    text-align: center;
+}
+
+h1 + p {
+    text-align: center;
 }
 
 h2 {
     font-size: 2rem;
 }
 
-nav ul {
-    list-style: none;
+a:link {
+    color:rgb(39, 130, 141);
     text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:active {
+    color: white
+}
+
+a:visited {
+    color: rgb(39, 130, 141);
+}
+
+a:hover {
+    transform:scale3d(1.2, 1.2, 1.2);
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    text-align:center;
 }
 
 nav li {
-    display: inline-block;
+    display: inline-flex;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
 }
 
 section {
     display: flex;
+    border-radius: 10px;
+}
+
+#main-heading {
+    background-image: url("Landscape1.jpg");
+    background-size: cover;
+}
+
+#sub-art {
+    background-color:black
+}
+
+#art-pic-shop {
+    background-image: url("nursery.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#art-pic-service {
+    background-image: url("gardener.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#art-pic-about {
+    background-image: url("desert.jpg");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 article {
     flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: large;
+    text-shadow: 1px 1px black;
+}
+
+article:hover {
+    transform:scale3d(1.15, 1.15, 1.15);
+    transition: 1s;
 }
 
 footer {
     display: flex;
+    text-shadow: 1px 1px black;
 }
 
 footer div {
